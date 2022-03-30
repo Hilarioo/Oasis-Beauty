@@ -1,0 +1,87 @@
+/* 
+*   filename:     footer.css
+*   description:  styling for web footer
+*   @import:      global.css
+*/
+
+/* import global variables */
+@import url("global.css");
+
+/* ===================================
+// Containers // Sekelton
+=================================== */
+.fContainer {
+  background-color: var(--global-cgray);
+  width: 100vw;
+  min-height: 15rem;
+}
+
+/* ===================================
+// Accordion
+=================================== */
+
+/* @Override mui accordion component*/
+.fAccordion {
+  background-color: var(--global-cgray) !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* @Override mui typography component*/
+.fContainer .MuiTypography-root {
+  color: var(--global-cwhite) !important;
+}
+
+.fAccordionHeader {
+  font-weight: bold !important;
+}
+
+/* @Override mui accordion -> svg component(s)*/
+.fLinks .MuiSvgIcon-root {
+  fill: var(--global-cgray-bright) !important;
+}
+
+.subscribeContainer {
+  width: 85%;
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+/* ===================================
+// Footer Bottom {Logo, Socials, Copyright}
+=================================== */
+
+#fLogo {
+  width: 12rem;
+  display: block;
+  margin: 2.5rem auto;
+  fill: var(--global-cprimary);
+}
+
+#fSocials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 15rem;
+  margin: 4rem auto 1rem auto;
+}
+
+#fb,
+#ig,
+#tk {
+  fill: var(--global-cwhite);
+}
+
+#fb:hover,
+#ig:hover,
+#tk:hover {
+  fill: var(--global-cprimary);
+}
+
+.fBttm p {
+  text-align: center;
+  color: var(--global-cwhite);
+}

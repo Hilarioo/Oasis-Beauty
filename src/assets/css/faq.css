@@ -1,0 +1,169 @@
+/* 
+*   filename:     faq.css
+*   description:  styling for FAQ WebPage and its components
+*   @import:      global.css
+*/
+
+/* import global variables */
+@import url("global.css");
+
+/* ===================================
+// Containers // Sekelton
+=================================== */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30pt;
+  padding-left: 0;
+  padding-right: 0;
+  grid-template-areas: "faq-menu-section faq-section contact-section";
+}
+
+.container-padding {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.faq-section {
+  grid-area: faq-section;
+}
+
+.faq-menu-section {
+  grid-area: faq-menu-section;
+  margin-bottom: 4em;
+}
+
+.contact-section {
+  grid-area: contact-section;
+}
+
+.contact-header {
+  background-color: var(--global-csecondary);
+  width: 107%;
+  overflow-x: hidden;
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.25rem;
+  margin-top: 4em;
+  margin-left: -0.75rem;
+  margin-bottom: 2em;
+  color: var(--global-cwhite);
+}
+/* containts component FAQButtons and FAQAccordions */
+.questions-subcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================================
+// Button Styling
+=================================== */
+
+.faq-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+  gap: 10pt;
+}
+
+.faq-menu-btn {
+  width: 100px;
+}
+
+.contact-send-btn {
+  height: 3.5em;
+  margin-bottom: 2em !important;
+}
+
+/* ===================================
+// Images // SVG // Objects
+=================================== */
+
+.palmtrees-mobile {
+  float: right;
+  margin-top: 0;
+  width: 7em;
+  height: 7em;
+}
+
+.palmtrees-desktop {
+  float: left;
+  margin-top: -5em;
+  margin-left: -3em;
+  width: 25em;
+  height: 25em;
+  display: none;
+}
+
+/* ===================================
+// Responsive: @media queries
+=================================== */
+
+/* tablets/laptops */
+@media (min-width: 768px) {
+  .questions-subcontainer {
+    flex-direction: row;
+  }
+  .contact-section {
+    margin-top: -5em;
+  }
+  .contact-header {
+    width: 100%;
+    margin-left: 0;
+  }
+  .contact-body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .palmtrees-mobile {
+    width: 15em;
+    height: 15em;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    grid-auto-flow: row;
+    margin-top: 65pt;
+  }
+  .contact-section {
+    margin-top: 0;
+  }
+  .contact-container {
+    max-width: 25em;
+  }
+  .questions-subcontainer {
+    min-width: 35em;
+  }
+  .contact-header {
+    /* display: none; */
+    margin-top: 0;
+  }
+  .contact-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .palmtrees-mobile {
+    width: 0em;
+    height: 0em;
+  }
+  .faq-section {
+    max-width: 645px;
+  }
+  .palmtrees-desktop {
+    display: block;
+  }
+}
+
+/* desktops */
+@media (min-width: 1200px) {
+  .palmtrees-desktop {
+    margin-top: -2em;
+  }
+}

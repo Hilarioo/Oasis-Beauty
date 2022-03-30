@@ -1,0 +1,146 @@
+/* 
+*   filename:     global.css
+*   description:  creates a base standards for global use throughout the entire website
+*   @import:      fonts: Montserra, Roboto, Roboto Mono
+*/
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@600;700&family=Roboto:wght@400;500&display=swap");
+
+/* ===================================
+// Containers // Sekelton
+=================================== */
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7d7d6;
+  overflow-x: hidden;
+}
+
+/* ===================================
+// Global Variables
+=================================== */
+:root {
+  /* Font */
+  --global-font-roboto: "Roboto", arial;
+  --global-font-mono: "Roboto Mono", arial;
+  --global-font-montserrat: "Montserrat", arial;
+
+  /* Font Size */
+  --global-fsize-h1: 2rem;
+  --global-fsize-h2: 1.5rem;
+  --global-fsize-h3: 1.125rem;
+  --global-fsize-h4: 1rem;
+  --global-fsize-p: 1rem;
+
+  /* Colors */
+  --global-cblack: #171717;
+  --global-cwhite: #ffffff;
+  --global-cgray: #4c5266;
+  --global-cgray-bright: #717da3;
+  --global-cprimary: #f7d7d6;
+  --global-csecondary: #a27876;
+}
+
+body {
+  font-family: var(--global-font-roboto);
+  font-size: var(--global-fsize-p);
+  color: var(--global-cblack);
+}
+
+h1 {
+  font-family: var(--global-font-mono);
+  font-size: var(--global-fsize-h1);
+}
+
+h2 {
+  font-family: var(--global-font-montserrat);
+  font-size: var(--global-fsize-h2);
+}
+
+h3 {
+  font-family: var(--global-font-mono);
+  font-size: var(--global-fsize-h3);
+}
+
+h4 {
+  font-family: var(--global-font-mono);
+  font-size: var(--global-fsize-h4);
+}
+
+p {
+  font-family: var(--global-font-roboto);
+  font-size: var(--global-fsize-p);
+}
+
+/* ===================================
+// Module Variables
+=================================== */
+/* Button Module */
+.primary-btn {
+  background-color: var(--global-cgray) !important;
+  font-weight: bold;
+  width: 125pt;
+  min-height: 45pt;
+}
+
+.secondary-btn {
+  background-color: var(--global-cwhite) !important;
+  font-weight: bold;
+  color: var(--global-cblack) !important;
+  width: 125pt;
+  min-height: 45pt;
+}
+
+.secondary-btn:hover {
+  background-color: var(--global-cgray) !important;
+  color: var(--global-cwhite) !important;
+}
+
+.submit-btn {
+  background-color: var(--global-csecondary) !important;
+}
+
+.transparent-btn {
+  background-color: rgba(0, 0, 0, 0) !important;
+  font-weight: bold;
+  box-shadow: none !important;
+  color: var(--global-cblack) !important;
+}
+
+.transparent-btn:hover {
+  background-color: var(--global-cgray) !important;
+  color: var(--global-cwhite) !important;
+}
+
+/* full width vertically */
+.v-full {
+  width: 100% !important;
+}
+
+/* ===================================
+// MUI Styling @override
+=================================== */
+
+.MuiButton-containedSecondary {
+  color: #4c5266;
+}
+
+/* TextField Module */
+.css-13r4j3i .MuiTextField-root {
+  margin: 8px 8px 8px 0 !important;
+}
+
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline,
+.MuiOutlinedInput-notchedOutline:focus,
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--global-csecondary) !important;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  color: var(--global-csecondary) !important;
+}
