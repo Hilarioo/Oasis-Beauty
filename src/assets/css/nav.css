@@ -1,0 +1,21 @@
+#quicklinks {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--global-cwhite);
+}
+
+#quicklinks a {
+  text-decoration: none;
+  color: var(--global-cwhite);
+  margin: 0.5rem;
+}
+
+#quicklinks a:hover {
+  color: var(--global-cprimary);
+}
+
+#quicklinks a:active {
+  color: var(--global-cprimary);
+  font-weight: bold;
+}

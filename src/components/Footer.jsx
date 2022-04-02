@@ -9,6 +9,9 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
+import QuickLinks from "../components/nav/QuickLinks";
+import Languages from "../components/nav/Languages";
+
 // Styling
 import "../assets/css/footer.css";
 
@@ -31,7 +34,9 @@ const Footer = () => {
             <Typography className='fAccordionHeader'>Quick Links</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{/* subNav: Quicklinks */}</Typography>
+            <Typography>
+              <QuickLinks />
+            </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion disableGutters={true} square={true} className='fAccordion'>
@@ -42,7 +47,9 @@ const Footer = () => {
             <Typography className='fAccordionHeader'>Languages</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{/* subNav: Languages */}</Typography>
+            <Typography>
+              <Languages />
+            </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -59,7 +66,10 @@ const Footer = () => {
           <AccordionDetails>
             <Typography>
               <div className='subscribeContainer'>
-                <p>Be the first to know! Also, 15% OFF your first order 🤑</p>
+                <p>
+                  Be the first to know! Also,{" "}
+                  <strong>10% OFF your first order.</strong> 🤑
+                </p>
                 <Box
                   component='form'
                   sx={{
@@ -79,7 +89,7 @@ const Footer = () => {
                   {/* Button [SEND] */}
                   <Button
                     variant='contained'
-                    className='submit-btn v-full contact-send-btn'>
+                    className='newsletter-btn v-full contact-send-btn'>
                     Subscribe
                   </Button>
                 </Box>
@@ -95,9 +105,15 @@ const Footer = () => {
 
         {/* socials */}
         <div id='fSocials'>
-          <FBSocial id='fb' />
-          <IGSocial id='ig' />
-          <TKSocial id='tk' />
+          <a href='https://www.facebook.com/'>
+            <FBSocial id='fb' />
+          </a>
+          <a href='https:/www.instagram.com/'>
+            <IGSocial id='ig' />
+          </a>
+          <a href='https:/www.tiktok.com/'>
+            <TKSocial id='tk' />
+          </a>
         </div>
 
         {/* copyright */}

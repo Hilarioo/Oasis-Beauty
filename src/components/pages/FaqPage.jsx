@@ -40,8 +40,6 @@ const FaqPage = () => {
       <div className='contact-section'>
         <ContactForm />
       </div>
-
-      <Footer />
     </div>
   );
 };

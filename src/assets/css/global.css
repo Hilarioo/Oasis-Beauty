@@ -103,6 +103,12 @@ p {
   background-color: var(--global-csecondary) !important;
 }
 
+.newsletter-btn {
+  background-color: var(--global-cprimary) !important;
+  color: var(--global-cgray) !important;
+  font-weight: bold !important;
+}
+
 .transparent-btn {
   background-color: rgba(0, 0, 0, 0) !important;
   font-weight: bold;
