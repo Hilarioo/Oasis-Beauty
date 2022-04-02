@@ -1,0 +1,21 @@
+/* 
+*   filename:     home.css
+*   description:  styling for Home WebPage and its components
+*   @import:      global.css
+*/
+
+/* import global variables */
+@import url("global.css");
+
+/* ===================================
+// Containers // Sekelton
+=================================== */
+.hContainer {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30pt;
+  padding-left: 0;
+  padding-right: 0;
+}

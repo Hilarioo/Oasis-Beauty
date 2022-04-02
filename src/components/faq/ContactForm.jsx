@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
-import { ReactComponent as PalmTrees } from "../assets/svg/palmtrees.svg";
+import { ReactComponent as PalmTrees } from "../../assets/svg/palmtrees.svg";
 
 const ContactForm = () => {
   return (

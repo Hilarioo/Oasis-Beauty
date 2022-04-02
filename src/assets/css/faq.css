@@ -10,8 +10,8 @@
 /* ===================================
 // Containers // Sekelton
 =================================== */
-.container {
-  min-height: 100vh;
+.fContainer {
+  min-height: 85vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,7 +21,7 @@
   grid-template-areas: "faq-menu-section faq-section contact-section";
 }
 
-.container-padding {
+.fContainer-padding {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }

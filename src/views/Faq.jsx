@@ -3,26 +3,25 @@
 //  Components: faq accordion & contact form
 // ************************
 import { useState, useEffect } from "react";
-import faq from "../../assets/data/faq";
-import "../../assets/css/global.css";
-import "../../assets/css/faq.css";
+import faq from "../assets/data/faq";
+import "../assets/css/global.css";
+import "../assets/css/faq.css";
 
-import FaqButtons from "../FaqButtons";
-import ContactForm from "../ContactForm.jsx";
-import FaqAccordion from "../FaqAccordion";
-import Footer from "../Footer";
+import FaqButtons from "../components/faq/FaqButtons";
+import ContactForm from "../components/faq/ContactForm.jsx";
+import FaqAccordion from "../components/faq/FaqAccordion";
 
-import { ReactComponent as PalmTrees } from "../../assets/svg/palmtrees.svg";
+import { ReactComponent as PalmTrees } from "../../../assets/svg/palmtrees.svg";
 
 const FaqPage = () => {
   const [activeCategory, setActiveCategory] = useState(faq.headers[0].category);
 
   return (
-    <div className='container'>
+    <div className='fContainer'>
       <div className='questions-container'>
         {/* Head */}
         <div className='contact-header'>
-          <h3 className='container-padding'>FREQUENTLY ASKED QUESTIONS</h3>
+          <h3 className='fContainer-padding'>FREQUENTLY ASKED QUESTIONS</h3>
         </div>
         <div className='questions-subcontainer'>
           <div className='faq-menu-section'>

@@ -1,11 +1,11 @@
-import ContactForm from "./components/ContactForm";
-import FaqPage from "./components/pages/FaqPage";
+import ContactForm from "./components/faq/ContactForm";
+import Home from "./views/Home";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <FaqPage />
+      <Home />
 
       <Footer />
     </div>
