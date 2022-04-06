@@ -9,14 +9,14 @@ const QuickLinks = () => {
       <a href='https://www.etsy.com/listing/1022969634/rosemary-melt-balm-pre-order?ref=listings_manager_grid'>
         Products
       </a>
-      <HashLink smooth to='#thevision/'>
+      <HashLink smooth to='/#thevision/'>
         The Vision
       </HashLink>
-      <HashLink smooth to='/faq/#contact'>
+      <HashLink smooth to='/#contact'>
         Contact
       </HashLink>
-      <HashLink smooth to='/faq/'>
-        FAQ
+      <HashLink smooth to='/#faq'>
+        Frequently Asked Questions
       </HashLink>
     </div>
   );

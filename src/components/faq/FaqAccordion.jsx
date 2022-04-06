@@ -2,7 +2,7 @@
 //  [COMPONENT] Frequently Asked Questions
 //  Details:    accordion bootstrap
 // ************************
-import faq from "../assets/data/faq";
+import faq from "../../assets/data/faq";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";

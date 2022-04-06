@@ -1,3 +1,16 @@
+/* 
+*   filename:     footer.css
+*   description:  styling for web footer
+*   @import:      global.css
+*/
+
+/* import global variables */
+@import url("global.css");
+
+/* ===================================
+// Containers // Sekelton
+=================================== */
+
 #quicklinks {
   display: flex;
   flex-direction: column;
@@ -18,4 +31,21 @@
 #quicklinks a:active {
   color: var(--global-cprimary);
   font-weight: bold;
+}
+
+/* ===================================
+// Languages
+=================================== */
+#languages button {
+  display: flex;
+  border: none;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  background-color: var(--global-cgray);
+  color: var(--global-cwhite)
+  
+}
+
+#languages button:hover {
+  color: var(--global-cprimary);
 }

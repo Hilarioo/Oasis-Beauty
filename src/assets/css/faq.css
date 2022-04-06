@@ -10,7 +10,7 @@
 /* ===================================
 // Containers // Sekelton
 =================================== */
-.fContainer {
+.faqContainer {
   min-height: 85vh;
   display: flex;
   flex-direction: row;
@@ -19,11 +19,6 @@
   padding-left: 0;
   padding-right: 0;
   grid-template-areas: "faq-menu-section faq-section contact-section";
-}
-
-.fContainer-padding {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .faq-section {
@@ -99,6 +94,31 @@
 }
 
 /* ===================================
+// MUI Styling @override
+=================================== */
+
+/* BEFORE @Override input field outline*/
+.contact-container .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: var(--global-csecondary) !important;
+}
+/* CLICKED @Override input highlighted // focused */
+.contact-container
+  .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--global-csecondary) !important;
+}
+
+/* @Override input text */
+.contact-container .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
+.contact-container .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: var(--global-cgray) !important;
+}
+
+.contact-container .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  color: var(--global-csecondary) !important;
+}
+
+/* ===================================
 // Responsive: @media queries
 =================================== */
 
@@ -125,7 +145,7 @@
 }
 
 @media (min-width: 992px) {
-  .container {
+  .faqContainer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;

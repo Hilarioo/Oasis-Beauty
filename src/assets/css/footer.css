@@ -90,3 +90,74 @@
   text-align: center;
   color: var(--global-cwhite);
 }
+
+/* ===================================
+// Footer Button(s)
+=================================== */
+
+.newsletter-btn {
+  background-color: var(--global-cprimary) !important;
+  color: var(--global-cgray) !important;
+  font-weight: bold !important;
+  margin-top: 0.5rem !important;
+}
+
+/* ===================================
+// MUI Styling @override
+=================================== */
+
+/* BEFORE @Override input field outline*/
+.fContainer .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: var(--global-cprimary) !important;
+}
+/* CLICKED @Override input highlighted // focused */
+.fContainer
+  .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--global-cprimary) !important;
+}
+
+/* @Override input text */
+.fContainer .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
+.fContainer .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: var(--global-cwhite) !important;
+}
+
+.fContainer .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  color: var(--global-cprimary) !important;
+}
+
+/* ===================================
+// Responsive: @media queries
+=================================== */
+
+/* tablets/laptops */
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .fLinks {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "fQuicklinks fLanguages fNewsletter";
+  }
+
+  .fQuicklinks {
+    grid-area: fQuicklinks;
+  }
+
+  .fLanguages {
+    grid-area: fLanguages;
+  }
+
+  .fNewsletter {
+    grid-area: fNewsletter;
+  }
+}
+
+/* desktops */
+@media (min-width: 1200px) {
+}

@@ -26,7 +26,10 @@ const Footer = () => {
   return (
     <div className='fContainer'>
       <div className='fLinks'>
-        <Accordion disableGutters={true} square={true} className='fAccordion'>
+        <Accordion
+          disableGutters={true}
+          square={true}
+          className='fAccordion fQuicklinks'>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel1a-content'
@@ -39,7 +42,10 @@ const Footer = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion disableGutters={true} square={true} className='fAccordion'>
+        <Accordion
+          disableGutters={true}
+          square={true}
+          className='fAccordion fLanguages'>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel2a-content'
@@ -56,7 +62,7 @@ const Footer = () => {
           defaultExpanded={true}
           disableGutters={true}
           square={true}
-          className='fAccordion'>
+          className='fAccordion fNewsletter'>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls='panel2a-content'

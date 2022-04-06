@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Button from "@mui/material/Button";
-import faq from "../assets/data/faq";
-import "../assets/css/global.css";
-import "../assets/css/faq.css";
+import faq from "../../assets/data/faq";
+import "../../assets/css/global.css";
+import "../../assets/css/faq.css";
 
 const FaqButton = ({ activeCategory, setActiveCategory }) => {
   const updateCategory = (e) => {

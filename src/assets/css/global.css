@@ -19,6 +19,11 @@ body {
   overflow-x: hidden;
 }
 
+.container-padding {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 /* ===================================
 // Global Variables
 =================================== */
@@ -103,12 +108,6 @@ p {
   background-color: var(--global-csecondary) !important;
 }
 
-.newsletter-btn {
-  background-color: var(--global-cprimary) !important;
-  color: var(--global-cgray) !important;
-  font-weight: bold !important;
-}
-
 .transparent-btn {
   background-color: rgba(0, 0, 0, 0) !important;
   font-weight: bold;
@@ -137,16 +136,4 @@ p {
 /* TextField Module */
 .css-13r4j3i .MuiTextField-root {
   margin: 8px 8px 8px 0 !important;
-}
-
-.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root:hover
-  .MuiOutlinedInput-notchedOutline,
-.MuiOutlinedInput-notchedOutline:focus,
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root:hover
-  .MuiOutlinedInput-notchedOutline {
-  border-color: var(--global-csecondary) !important;
-}
-
-.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  color: var(--global-csecondary) !important;
 }

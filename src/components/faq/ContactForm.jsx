@@ -7,10 +7,11 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import { ReactComponent as PalmTrees } from "../../assets/svg/palmtrees.svg";
+import "../../assets/css/faq.css";
 
 const ContactForm = () => {
   return (
-    <div className='contact-container'>
+    <div id='contact' className='contact-container'>
       <PalmTrees className='palmtrees-mobile' />
       {/* Head */}
       <div className='contact-header'>
