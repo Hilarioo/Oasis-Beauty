@@ -27,6 +27,7 @@ const Footer = () => {
     <div className='fContainer'>
       <div className='fLinks'>
         <Accordion
+          defaultExpanded={false}
           disableGutters={true}
           square={true}
           className='fAccordion fQuicklinks'>
@@ -43,6 +44,7 @@ const Footer = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion
+          defaultExpanded={false}
           disableGutters={true}
           square={true}
           className='fAccordion fLanguages'>
